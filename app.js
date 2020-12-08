@@ -8,10 +8,7 @@
 
   const route = require('./routes/route' );
 
-  mongoose.connect('mongodb+srv://contact:<contact>@cluster0.qhpsq.mongodb.net/<contact>?retryWrites=true&w=majority',{
-    useMongoClient : true
-}
-);
+  mongoose.connect('mongodb://localhost:27017/contactlist');
 
 
 mongoose.connection.on('connected',()=>{
